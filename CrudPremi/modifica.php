@@ -14,7 +14,6 @@ try{
 <html lang="it">
 <head>
     <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Modifica premio</title>
 </head>
 <body>
@@ -26,11 +25,12 @@ try{
         <input type="number" name="money" value="<?php echo $premio['premio'] ?>"><br>
         Scansionato
         <input type="checkbox" name="scan" value="1" <?php if($premio['scansionato'] == 1): ?>checked<?php endif ?>><br>
-
         <input type="submit" value="Salva modifiche">
     </form>
     <?php else: ?>
         Premio non trovato
     <?php endif ?>
+    <br>
+    <a href="index.php">Torna all'elenco</a>
 </body>
 </html>
